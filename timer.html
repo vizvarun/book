@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Parking | Timer</title>
+    <link rel="icon" href="/img/7.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light" style="background-color: transparent !important">
+        <a class="navbar-brand" href="#" style="margin-left: 20px;">Smart Parking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    </nav>
+
+    <div class="container">
+        <div class="row" align="center">
+            <div class="col-lg-2" style="margin-top: 250px;">
+                <h5 style="font-size: 2rem">Time Left :</h5>
+            </div>
+            <div class="col-lg-10" style="margin-top: 185px">
+                <div id="timer" style="font-size: 6rem">59:59</div>
+                <script type="text/javascript">
+                    var timeoutHandle;
+
+                    function countdown(minutes) {
+                        var seconds = 60;
+                        var mins = minutes
+
+                        function tick() {
+                            var counter = document.getElementById("timer");
+                            var current_minutes = mins - 1
+                            seconds--;
+                            counter.innerHTML =
+                                current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+                            if (seconds > 0) {
+                                timeoutHandle = setTimeout(tick, 1000);
+                            } else {
+                                if (mins > 1) {
+                                    setTimeout(function() {
+                                        countdown(mins - 1);
+                                    }, 1000);
+                                }
+                            }
+                        }
+                        tick();
+                    }
+                    countdown(60);
+                </script>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cen" align="center">
+
+                    <button type="button" class="btn btn-dark" href="reciept.html" style="background-color: teal !important ;font-size: 1.2rem;width: 150px;"><a href="reciept.html" style="color: whitesmoke">Finish</a></button></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br><br><br><br><br>
+    <footer align="center">
+
+        <p>Supernova &copy; 2019 | Developed by <a href="https://www.linkedin.com/in/varun-vishal" target="_blank" style="color: whitesmoke"> Varun Vishal</a></p>
+    </footer>
+    <br><br>
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Parking</title>
+    <link rel="icon" href="/img/7.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light" style="background-color: transparent !important">
+        <a class="navbar-brand" href="index.html" style="margin-left: 20px;">Smart Parking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bookings">Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Helpdesk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="intro">
+            <div class="row">
+                <div class="col-lg-6" style="margin-top: 20px;">
+                    <img src="/img/6.png" alt="" width="85%">
+                </div>
+
+                <div class="col-lg-6" style="margin-top: 120px; font-size: 1.3rem;">
+                    <p>Finding a <strong>proper spot</strong> for your vehicle every day is always a tedious job and waiting for an empty space is irritating. In the busiest hours of your every day <strong>avoid the troubles</strong> of looking for a proper
+                        place as we provide you an easy way to <strong>safely park your vehicle</strong>. Be smart and select your favorite parking spot booking with us.<strong> Book online</strong> and enjoy your day.</p><br><br>
+                    <div class="cen" align="center">
+                        <button type="button" class="btn btn-dark" href="timer.html" style="background-color: teal !important ;font-size: 1.2rem;width: 200px;">Book Your Spot</button></div>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br>
+        <hr align="center" id="bookings" color="white" style="width: 500px;padding-left: 200px;">
+        <br><br><br>
+        <section class="bookings">
+            <h2 align="center">Book Your Spot</h2>
+            <br><br><br><br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form action="contact.php" method="post">
+                        <input type="text" name="name" id="" placeholder="Name" required="" style="margin-left: 10px;"> <br> <br>
+                        <input type="number" name="carnum" id="" placeholder="Last 4 digit of your Car Number" required="" style="margin-left: 10px;"> <br> <br>
+                        <input type="text" name="phone" id="" placeholder="Phone Number" required="" maxlength="10" style="margin-left: 10px;"> <br> <br>
+                        <input type="email" name="email" id="" placeholder="Email ID" required="" style="margin-left: 10px;"> <br> <br><br>
+                        <input type="submit" class="btn btn-dark" value="Submit" style="margin-left: 10px;">
+                        <input type="reset" class="btn btn-dark" value="Reset" style="margin-right: 10px;">
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <br>
+                    <h4 align="center" id="contact">Contact Us :</h4>
+                    <br><br>
+                    <ul>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <li>Nikita Rani</li>
+                            </div>
+                            <div class="col-lg-8">
+                                <strong>Email ID : </strong>nikitarani2305@gmail.com
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <li>Rishabh Raj Gupta</li>
+                            </div>
+                            <div class="col-lg-8">
+                                <strong>Email ID : </strong>rishabhguptaxyu@gmail.com
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <li>Kaushki Sharma</li>
+                            </div>
+                            <div class="col-lg-8">
+                                <strong>Email ID:</strong>kaushkisharma1417@gmail.com
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <li>Shivam Awasthi</li>
+                            </div>
+                            <div class="col-lg-8">
+                                <strong>Email ID:</strong>shivamawasthi704@gmail.com
+                            </div>
+
+                        </div>
+
+                </div>
+                </ul>
+            </div>
+    </div>
+
+    </section>
+
+    </div>
+    <br><br>
+
+    <footer align="center">
+
+        <p>Supernova &copy; 2019 | Developed by <a href="https://www.linkedin.com/in/varun-vishal" target="_blank" style="color: whitesmoke"> Varun Vishal</a></p>
+    </footer>
+
+
+    <br><br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

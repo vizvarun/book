@@ -1,20 +1,23 @@
 
 <?php
 
-$Use_Name=$_POST['name'];
-$Use_Email=$_POST['email'];
-$Use_Mob=$_POST['phone'];
-$Use_Car=$_POST['carnum'];
+$Use_FName=$_POST['Firstname'];
+$Use_SName=$_POST['Surname'];
+$Use_DOB=$_POST['DoB'];
+$Use_Age=$_POST['Age'];
+$Use_Gender=$_POST['Gender'];
+$Use_Mob=$_POST['Mobile'];
 
-$ip="localhost";
-$user="id10876328_reg";
-$password="hello";
-$db_name="id10876328_reg";
+
+    $ip="localhost";
+	$user="root";
+	$password="";
+	$db_name="student.db";
 
 	$connection=mysqli_connect($ip,$user,$password,$db_name);
 
 	
-	$insert="INSERT INTO contact SET name='$Use_Name', email='$Use_Email', phone='$Use_Mob', carnum='$Use_Car'";
+	$insert="INSERT INTO student SET Firstname='$Use_FName', Firstname='$Use_Name' ,  email='$Use_Email', phone='$Use_Mob', carnum='$Use_Car'";
 	$connection->query($insert);
 	
 	$to_team = "varunvishal10@gmail.com";
